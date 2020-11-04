@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quizapp"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            >
+            <TextView
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/welcome"
+                android:textColor="#363A43"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/please_enter_your_name"
+                android:textColor="#7A8089"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                >
+            </TextView>
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:textColor="#363A43"
+                    android:textColorHint="#7A8089"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/bt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:onClick="start"
+                >
+
+            </Button>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

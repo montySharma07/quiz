@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">quiz</string>
+    <string name="welcome">Welcome</string>
+    <string name="quizapp">QuizApp</string>
+    <string name="please_enter_your_name">Please Enter your Name</string>
+    <string name="name">Name</string>
+    <string name="start">Start</string>
+    <string name="which_country_flag_is_this">which country flag is this</string>
+    <string name="_0_10">0/10</string>
+    <string name="options">options</string>
+    <string name="next">Submit</string>
+    <string name="finish">Finish</string>
+    <string name="go">Go to Next Question</string>
+    <string name="result">Result</string>
+    <string name="hey_congratulation">Hey, Congratulation!</string>
+    <string name="todo">TODO</string>
+</resources>
